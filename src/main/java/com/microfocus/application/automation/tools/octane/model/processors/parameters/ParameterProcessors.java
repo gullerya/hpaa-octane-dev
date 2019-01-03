@@ -61,7 +61,7 @@ public enum ParameterProcessors {
 	}
 
 	public static List<CIParameter> getConfigs(Job job) {
-		ArrayList<CIParameter> result = new ArrayList<>();
+		List<CIParameter> result = new ArrayList<>();
 		List<ParameterDefinition> paramDefinitions;
 		ParameterDefinition pd;
 		String className;
@@ -95,7 +95,6 @@ public enum ParameterProcessors {
 			Job job = run.getParent();
 			List<ParameterDefinition> paramDefinitions;
 			String className;
-
 			Map<String, ParameterValue> parametersValues;
 			ParametersAction parametersAction = run.getAction(ParametersAction.class);
 			if (parametersAction != null) {
