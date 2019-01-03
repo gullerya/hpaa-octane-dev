@@ -94,7 +94,6 @@ public enum ParameterProcessors {
 		List<ParameterDefinition> paramDefinitions;
 		String className;
 
-
 		Map<String, ParameterValue> parametersValues;
 		ParametersAction parametersAction = run.getAction(ParametersAction.class);
 		if (parametersAction != null) {
